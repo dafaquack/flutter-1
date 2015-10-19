@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Change from get 'pages/<page> to not show /pages in url'
   get 'home' => 'pages#home'
 

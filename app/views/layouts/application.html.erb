@@ -11,6 +11,9 @@
 <%= render '/layouts/nav' %>
 
 <div class='container'>
+  <!-- Using span tags instead of p tags because latter takes up whole line-->
+  <span class="notice"><%= notice %></span>
+  <span class="alert"><%= alert %></span>
   <%= yield %>
 </div>
 
